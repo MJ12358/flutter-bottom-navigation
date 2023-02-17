@@ -10,10 +10,20 @@ class FlutterBottomNavigation extends StatefulWidget {
     this.type = BottomNavigationBarType.fixed,
   }) : super(key: key);
 
+  /// Defines the appearance of the button items that are
+  /// arranged within the bottom navigation bar.
   final List<BottomNavigationBarItem> items;
+
+  /// Called when one of the [items] is tapped.
   final ValueChanged<int> onTap;
+
+  /// The color of the [BottomNavigationBar] itself.
   final Color? backgroundColor;
+
+  /// The z-coordinate of this [BottomNavigationBar].
   final double? elevation;
+
+  /// Defines the layout and behavior of a [BottomNavigationBar].
   final BottomNavigationBarType type;
 
   @override

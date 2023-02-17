@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bottom_navigation/src/flutter_bottom_navigation.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:flutter_bottom_navigation/src/flutter_bottom_navigation.dart';
-
 void main() {
-  const List<BottomNavigationBarItem> items = [
+  const List<BottomNavigationBarItem> items = <BottomNavigationBarItem>[
     BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
     BottomNavigationBarItem(icon: Icon(Icons.abc), label: 'ABC'),
   ];
 
-  onTap(int value) {}
+  void onTap(int value) {}
 
-  testWidgets('bottomNav', (tester) async {
+  testWidgets('bottomNav', (WidgetTester tester) async {
     await tester.pumpWidget(
       MaterialApp(
         home: Scaffold(
