@@ -1,6 +1,6 @@
 name: flutter_bottom_navigation
 description: A simple wrapper for flutter's BottomNavigationBar that handles the current index for you.
-version: 1.0.1
+version: 1.0.2
 repository: https://github.com/mj12358/flutter-bottom-navigation
 
 environment:
